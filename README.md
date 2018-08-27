@@ -17,10 +17,18 @@ Once an item has been resolved, mark it as Closed to track the progress of the M
 * Fork the team repo into your own GitHub account (Let's call it individual repo). If you have forked it, pull it at the start of every week to keep your repo updated.
 * Clone your individual repo onto your desktop. When you want to update your individual repo with the latest changes fom the team repo, pull directly from the team repo into your LOCAL repo, then push from your LOCAL repo to your INDIVIDUAL repo on Git.
 * Make your own branch on your individual repo if you wish. Preferably, each new feature should have its own branch.
+  `git checkout -b <branch_name>`: this will check you out to the new branch
 * Make your changes in the individual repo. In your changes, ensure:
   * Your code complies with CheckStyles rules
   * You have added JUnit tests for your new features
-* Once your changes are ready, push your local changes to your individual repo on Git.
+* Commit your changes to your local branch.
+  * First, ensure that you are on the right branch, then use the following commands:
+    To checkout to a particular branch, use `git checkout <branch_name>`
+  * Once you are on the right branch, commit changes using the following commands:
+    `git add .`: This will add all untracked files to your commit.
+    `git commit -a -m "<MESSAGE_FOR_COMMIT>"`: Ensure that the message starts with a *VERB* in its infinitive form (e.g. Create, Update, Delete, Add)
+* Once your changes are committed, push your local changes to your individual repo on Git.
+  `git push origin <branch_name>`
 * Make a pull request from your individual repo to the team repo. Ensure that the branch selected on your individual repo is the branch with the new changes, and the branch on the team repo the weekly branch (not the master branch).
 * Your changes will go through Travis and Coveralls for Continuous Integration. Once done, the pull request is ready to be merged.
 * Tech lead (I) will merge the green-checked pull requests to the team repo and the new changes will be on the team repo. However, such changes will remain on the weekly branch of the team repo till the end of the week when it will be merged to the master branch for release.
