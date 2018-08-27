@@ -16,6 +16,10 @@ Once an item has been resolved, mark it as *Closed* to track the progress of the
 ## Contributing Procedure:
 * Fork the team repo into your own GitHub account (Let's call it individual repo). If you have forked it, pull it at the start of every week to keep your repo updated.
 * Clone your individual repo onto your desktop. When you want to update your individual repo with the latest changes fom the team repo, pull directly from the team repo into your LOCAL repo, then push from your LOCAL repo to your INDIVIDUAL repo on Git.
+* Fetch the team repo at the start of the week to get all the remote branches of the team repo.
+  * `git fetch https://github.com/IS3106-T07/Enterprice-Systems-Interface`
+* Pull the weekly branch regularly to keep your local repo updated.
+  * `git pull https://github.com/IS3106-T07/Enterprice-Systems-Interface <branch_name>`
 * Make your own branch on your individual repo if you wish. Preferably, each new feature should have its own branch.
   * `git checkout -b <branch_name>`: this will check you out to the new branch
 * Make your changes in the individual repo. In your changes, ensure:
@@ -32,4 +36,3 @@ Once an item has been resolved, mark it as *Closed* to track the progress of the
 * Make a pull request from your individual repo to the team repo. Ensure that the branch selected on your individual repo is the branch with the new changes, and the branch on the team repo the weekly branch (not the master branch).
 * Your changes will go through Travis and Coveralls for Continuous Integration. Once done, the pull request is ready to be merged.
 * Tech lead (I) will merge the green-checked pull requests to the team repo and the new changes will be on the team repo. However, such changes will remain on the weekly branch of the team repo till the end of the week when it will be merged to the master branch for release.
-* Pull the weekly branch regularly to keep your local repo updated.
