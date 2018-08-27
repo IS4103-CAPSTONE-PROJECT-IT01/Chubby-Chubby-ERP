@@ -28,3 +28,4 @@ APIKey.confidential
 # Output folders #
 out
 target
+individualFolder
