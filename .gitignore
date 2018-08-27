@@ -24,3 +24,7 @@ hs_err_pid*
 
 # Confidential files #
 APIKey.confidential
+
+# Output folders #
+out
+target
